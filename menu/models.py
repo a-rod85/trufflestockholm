@@ -1,5 +1,8 @@
 from django.db import models
 
+FOOD_MENU_SECTION = ((0, "Dinner"), (1, "New Item"))
+DRINK_MENU_SECTION = ((0, "Beer"), (1, "Soft Drinks"))
+
 
 class MenuSection(models.Model):
     name = models.CharField(max_length=100)

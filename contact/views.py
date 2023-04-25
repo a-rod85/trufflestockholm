@@ -2,6 +2,8 @@ from django.shortcuts import render
 from contact import views
 
 # Create your views here.
+
+
 def homepage(request):
     return render(request, "index.html")
 
@@ -27,4 +29,4 @@ def contact(request):
         )
 
     form = ContactForm()
-    return render(request, "",{"form":form})
+    return render(request, "", {"form": form})

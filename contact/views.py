@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from .forms import ContactForm
-
+from contact import views
 
 # Create your views here.
 def homepage(request):
